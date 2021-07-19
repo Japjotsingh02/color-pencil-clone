@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="#">
+
+        <!-- *********************** Google Fonts Libraray *********************** -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  
+        <title>Color Pencil</title>
+
+        <!-- *********************** CSS Stylesheet *********************** -->
+        <link rel="stylesheet" href="./resources/style.css">
+
+        <!-- *********************** Icons  *********************** -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+    <body>
+        <div class="container">
+            <header id="header">
+                <div class="flex laptop">
+                    <div class="logo-title"><a href="index.html">color pencil</a></div>
+                    <img class="icon-bar" src="https://img.icons8.com/office/16/ffffff/menu--v3.png"/>
+                    <nav class="laptop-navbar">
+                        <ul class="flex">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                            <li><a href="#artwork">Explore</a></li>
+                            <li><a href="login-in.html" class="login-button">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="mobile-navbar">   
+                    <ul class="flex">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="#artwork">Explore</a></li>
+                        <li><a href="login-in.html" class="login-button">Login</a></li>
+                    </ul>
+                </nav>
+                <div class="chat-bot">
+                    <img src="https://img.icons8.com/ios-glyphs/40/4a90e2/chat.png"/>
+                </div>
+                <div class="bot-card">
+                    <div class="chat-header">
+                        <div class="flex">
+                            <img src="./resources/chat-bot.svg">
+                            <div class="bot-profile">
+                                <h2>Bot</h2>
+                                <div class="bot-status">We typically reply in a few minutes</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-chat-block">
+                        <div class="outer-container">
+                            <div class="chat-container">
+                                <div class="chat-box">
+                                    <h4 class="chat-timestamp">15:55</h4>
+                                    <p class="botStarterMessage">
+                                        <!-- <p class="bot-text"> -->
+                                            <!-- <span>Got any questions? I am happy to help.</span> -->
+                                        <!-- </p> -->
+                                    <!-- </p> -->
+                                    <!-- <p class="user-text"> -->
+                                        <!-- <span>hi</span> -->
+                                    </p>
+                                </div>
+                                <div class="chat-bar-input-block flex">
+                                    <div id="userInput">
+                                        <input id="textInput" class="input-box" type="text" name="msg"
+                                            placeholder="Tap 'Enter' to send a message">
+                                    </div>
+        
+                                    <div class="chat-bar-icons flex">
+                                        <label for="file-input"><i id="chat-icon" aria-hidden="true" style="color: hsl(212.37, 67.26%, 58.82%);" class="fa fa-fw fa-paperclip"></i></label>
+                                        <input type="file" id="myFile" class="file-input hide" name="file-input">
+                                        <div class="filename-container hide"></div>
+                                        <i id="chat-icon"  style="color: #333;" class="fa fa-fw fa-send chat-send"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+
+            <section class="wrapper">
+                <img src="./resources/pencil5.jpg" alt="">
+                <div class="company-desc">
+                    <h1 class="name">ColorPencil</h1>
+                    <p class="name-desc">Digital Portfolio for Artists & Students from imagiobox</p>
+                    <a class="sign-in-button" href="sign-in.html">Sign In</a>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <h2>About Us</h2>
+                <div class="flex">
+                    <div class="artist">
+                        <img class="image" src="./resources/painting.jpg">
+                        <h2 class="title">What we offer For Artists</h2>
+                        <p class="title-desc">An Artist account to share your creative portfolio and to manage student accounts. A centralised platform with easy controls to document student development that ensures better interaction and feedback. Easily organise local and national level workshops and activities.</p>
+                    </div>
+
+                    <div class="parent">
+                        <img class="image" src="./resources/parent.jpg">
+                        <h2 class="title">What we offer For Parents</h2>
+                        <p class="title-desc">Offers parents a personalised window into their child’s development hence also creating a real audience for the student’s works. Easy to collect and organise their children’s works through their school years. Improving the parent teacher relations through feedback and interaction.</p>
+                    </div>
+
+                    <div class="student">
+                        <img class="image" src="./resources/student.jpg">
+                        <h2 class="title">What we offer For Students</h2>
+                        <p class="title-desc">A safe and moderated space for them to connect with their friends and peers. A platform to document and share their art works. Easy access to resources and art facilities in a moderated environment. An opportunity for them to be part of community based art projects and learning through co-operation.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <a href="login-in.html"><button class="button">Submit your artwork</button></a>
+                <h1 class="artwork" id="artwork">Art Works</h1>
+                <p class="artwork-desc">Find out the Best in our dreams...Dreams always come true.</p>
+
+                <div class="art flex">
+                    <div class="card">
+                        <img class="drawing" src="./resources/drawing1.jpg">
+                        <div class="artist-profile flex">
+                            <h1 class="profile-name">Ashu Rani</h1>
+                            <img class="love" src="https://img.icons8.com/material-outlined/24/fa314a/filled-like.png"/>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="drawing" src="./resources/drawing1.jpg">
+                        <div class="artist-profile flex">
+                            <h1 class="profile-name">Ashu Rani</h1>
+                            <img class="love" src="https://img.icons8.com/material-outlined/24/fa314a/filled-like.png"/>
+                        </div>
+                    </div>
+                </div>
+                <a href="#"><button class="button">View more</button></a>
+            </section>
+                
+            <footer id="footer" class="flex">
+                <div class="logo-title"><a href="index.html">color pencil</a></div>
+                <div>
+                    <h2 class="topic">Aves</h2>
+                    <div class="topic-desc">
+                        <p>Our Branches:</p>
+                        <p>Mumbai, Maharashtra</p>   
+                        <p>Kollam, Kerala</p>    
+                        <p>E-mail: info@imagiobox.com</p>    
+                        <p>Phone: 7907713977</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="topic">Aves support</h3>
+                    <div class="topic-desc">
+                        <p>Contact Us</p>
+                        <p>Privacy Policy</p>
+                        <p>About Us</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="topic">Social Links</h3>
+                    <div class="flex icons">
+                        <a href="https://www.facebook.com/avesorganisation"><img class="social" src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"/></a>
+                        <a href="https://www.instagram.com/avesorganisation/"><img class="social" src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"/></a>
+                        <a href="https://twitter.com/imagiobox"><img class="social" src="https://img.icons8.com/ios-filled/50/ffffff/twitter-circled.png"/></a>
+                        <a href="https://www.youtube.com/channel/UCl8K-dvzQ1RtRG5V0e-AUEQ"><img class="social" src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"/></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Javascript FIle Link -->
+        <script src="./js/index.js"></script>
+    </body>
+</html>        
+
+    

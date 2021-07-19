@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Spartan',sans-serif;
+    line-height: 1.428;
+}
+
+.flex{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+input[type="text"]:active,:focus{
+    outline: none;
+ }
+
+#header{
+    padding: 2rem;
+    background-color: hsl(207, 95%, 8%);
+}
+
+.laptop{
+    flex-direction: row;
+}
+
+.logo-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.logo-title>a{
+    color: hsl(0,0%,100%);
+}
+
+.icon-bar{
+    height: 4rem;
+    width:3rem;
+    position:absolute;
+    right:0;
+    cursor: pointer;
+    margin-right: 2rem;
+    margin-top: -1rem;
+    color: white;
+}
+
+.active{
+    display: block !important;
+}
+
+.laptop-navbar{
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    display: none;
+}
+
+li a{
+    color: hsl(0,0%,100%) ;
+}
+
+.laptop-navbar ul{
+    flex-direction: row;
+}
+
+.laptop-navbar ul li{
+    list-style: none;
+    margin-left: 3rem;
+    font-size: 1.4rem;
+}
+
+.mobile-navbar{
+    margin-top: 3rem;
+    display: none;
+}
+
+.mobile-navbar ul{
+    flex-direction: column;
+}
+
+.mobile-navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+
+.login-button{
+    background-color: hsl(334, 91%, 49%);
+    padding: 0.5rem 1rem;
+}
+
+.chat-bot{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    background: hsl(180, 9%, 86%);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px, rgb(0 0 0 / 20%) 0px 2px 24px
+}
+
+.chat-bot:hover{
+    box-shadow:rgb(0 0 0 / 20%) 0px 2px 10px, rgb(0 0 0 / 30%) 0px 4px 28px;
+}
+
+.bot-card{
+    background-color: hsl(212.37, 67.26%, 58.82%);
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px, rgb(0 0 0 / 20%) 0px 2px 24px;
+    position: fixed;
+    top: 20%;
+    right:3%;
+    z-index: 9999;
+    border-radius: 10px;
+    display: none;
+}
+
+.chat-header{
+    padding: 2rem 2rem 1rem;
+    color: hsl(0,0%,100%);
+}
+
+.full-chat-block{
+    background-color: hsl(0,0%,100%);
+    overflow: auto;
+    text-align: center;
+}
+
+.outer-container{
+    min-height: 400px;
+    position: relative;
+    bottom: 0;
+}
+
+.chat-container{
+    max-height: 400px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+}
+
+.bot-profile{
+    margin-left: 2rem;
+}
+
+.bot-status{
+    font-size: 12px;
+}
+
+.chat-box p{
+    margin: 1em 0em;
+}
+
+.bot-text{
+    color: #000;
+    font-weight: normal;
+    font-size: 13px;
+    text-align: left;
+}
+
+.bot-text span{
+    line-height: 1.5em;
+    display: inline-block;
+    background: hsl(132, 6%, 83%);
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards;
+}
+
+.user-text{
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+
+.user-text span{
+    line-height: 1.5em;
+    display: inline-block;
+    background: hsl(212.37, 67.26%, 58.82%);
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards;
+}
+
+.chat-bar-input-block{
+    float: left;
+    width: 100%;
+    align-items: center;
+    background-color: hsl(132, 6%, 83%);
+    padding: 10px 0px 10px 10px;
+}
+
+
+#userInput{
+    width: 75%;
+}
+
+.input-box{
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: #000;
+    background-color: white;
+    outline: none;
+}
+
+.chat-bar-icons{
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    font-size: 20px;
+}
+
+#chat-icon{
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.wrapper img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.company-desc{
+    position: absolute;
+    width: 100%;
+    top: 12%;
+    left: 0%;
+    color: hsl(0,0%,100%);
+    text-align: center;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.name{
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+}
+
+.name-desc{
+    font-size: 1.8rem;
+    margin: 3rem 0rem 4rem;
+}
+
+.sign-in-button{
+    font-size: 1.5rem;
+    background-color: hsl(334, 91%, 49%);
+    padding: 1rem;
+    cursor: pointer;
+    color: hsl(0,0%,100%);
+}
+
+.about > h2{
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 3rem;
+}
+
+.about > div{
+    flex-direction: column;
+}
+
+.image{
+    width: 50%;
+    margin-left: 25%;
+    height: 20rem;
+}
+
+.title{
+    font-size: 1.8rem;
+    margin:1rem 0rem;
+    text-align: center;
+}
+
+.title-desc{
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0rem 2rem 5rem;
+}
+
+.button{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding: 1rem 0rem;
+    font-size: 1.6rem;
+    background-color: hsl(212.37, 67.26%, 58.82%);
+    color: hsl(0,0%,100%);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+.artwork{
+    margin: 0rem 0rem 1rem;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.artwork-desc{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.art{
+    flex-direction: column;
+}
+
+.love{
+    cursor: pointer;
+}
+
+.card{
+    width: 100%;
+    margin: 0 auto 2rem;
+    border-bottom:2px solid hsl(207, 95%, 8%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 314px;
+    border-top: 0;
+}
+
+.card:hover{
+    box-shadow: 2px 5px 20px 5px rgb(165, 164, 164);
+}
+
+.drawing{
+    width: 100%;
+    min-height: 240px;
+    display: block;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.artist-profile{
+    justify-content: space-between;
+    padding: 2rem 0.5rem;
+}
+
+.profile-name{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+}
+
+
+#footer{
+    padding: 4rem;
+    background-color: hsl(207, 95%, 8%);
+    color: hsl(0,0%,100%);
+    flex-direction: column;
+    gap:3rem;
+}
+
+.topic{
+    margin-bottom: 1rem;
+    color: hsl(132, 6%, 83%);
+}
+
+.topic-desc{
+    font-size: 14px;
+    line-height: 1.6;
+    color: hsl(184, 9%, 62%);
+}
+
+
+.icons{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social{
+    cursor: pointer;
+}
+
+.contact-form{
+    background-image: url("https://colorpencil.ml/assets/images/background/create-article.jpg");
+    background-size: contain;
+    padding: 3rem 0rem;
+}
+
+.form-card{
+    margin: 0rem auto;
+    padding: 1rem;
+    width: 90%;
+    background-color: hsl(0,0%,100%);
+}
+
+.form-card h1{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.logo{
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.form-card form{
+    flex-direction: column;
+}
+
+.contact-input{
+    margin: 0.4rem 2rem;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid hsl(184, 9%, 62%);
+}
+
+.message{
+    padding-bottom: 4rem;
+}
+
+.submit{
+    margin-top: 1rem;
+    background-color: hsl(212.37, 67.26%, 58.82%);
+    color: hsl(0,0%,100%);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.sign-in-form{
+    background-color: hsl(140, 12%, 90%);
+    padding: 10rem 0rem 5rem;
+}
+
+.sign-in-form h2{
+    margin: 1rem 0rem 3rem;
+}
+
+.input{
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid hsl(184, 9%, 62%);
+    margin: 1rem 1rem;
+}
+
+.input-bottom{
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid hsl(184, 9%, 62%);
+    margin-top: 3rem;
+}
+
+.remember{
+    font-size: 1.2rem;
+}
+
+footer{
+    padding: 2rem;
+}
+
+.filename-container {
+    margin: 20px 20px 0 0;
+  }
+  
+  .filename {
+    display: inline-block;
+    padding: 0 10px;
+    margin-right: 10px;
+    background-color: #ccc;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'verdana', sans-serif;
+  }
+  
+
+@media screen and (min-width:460px) {
+
+    .name{
+        font-size: 4rem;
+    }
+    
+    .name-desc{
+        font-size: 3rem;
+    }
+
+    .icons{
+        padding:0rem 3rem;
+    }
+
+}
+
+@media screen and (min-width:500px) {
+
+    .company-desc{
+        top: 20%;
+    }
+
+    .name-desc{
+        margin: 3rem 0rem 5rem;
+    }
+
+    .form-card{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:720px) {
+
+    .laptop-navbar{
+        display: block;
+    }
+
+    .mobile-navbar{
+        display: none !important;
+    }
+
+    .bot-card{
+        width: 37rem;
+    }
+
+    .icon-bar{
+        display: none;
+    }
+
+    .company-desc{
+        top: 20%;
+    }
+
+    img{
+        max-height: 50rem;
+    }
+
+    .name{
+        font-size: 8rem;
+    }
+        
+    .name-desc{
+        font-size: 4rem;
+        margin: 3rem 0rem 6rem;
+    }
+
+    .sign-in-button{
+        font-size: 2.5rem;
+    }
+
+    .about > div{
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .art{
+        flex-direction: row;
+    }
+
+    .button{
+        width: 20%;
+    }
+
+    #footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .icons{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0rem;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .form-card{
+        width: 30%;
+    }
+}

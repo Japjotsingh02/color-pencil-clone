@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="#">
+        <!-- *********************** Google Fonts Libraray *********************** -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+  
+        <title>Color Pencil</title>
+        <!-- *********************** CSS Stylesheet *********************** -->
+        <link rel="stylesheet" href="./resources/style.css">
+
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo-title"><a href="index.html">color pencil</a></div>
+        </header>
+        <section class="sign-in-form">
+            <div class="form-card">
+                <h2>Sign In</h2>
+                <form class="flex" method="POST" action="mailto: sjapjot2002@gmail.com" enctype="multipart/form-data">
+                    <input class="input" type="text" placeholder="UserName" required>
+                    <input class="input" type="password" placeholder="Password" required>
+                    <select class="input">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                    </select>
+                    <div class="flex input-bottom">
+                        <div class="remember">
+                            <input type="checkbox" name="remember">
+                            <label for="remember">Rememeber Me</label>
+                        </div>
+                        <input type="submit" value="SignIn" class="input submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <h3>© 2020 AVES All rights reserved.</h3>
+        </footer>
+    </body>
