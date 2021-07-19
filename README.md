@@ -2,7 +2,7 @@
 This is a color pencil clone.
 
 ## Table of contents
-* [Overview](https://github.com/Japjotsingh02/Weather-App#overview)
+* [Overview](https://github.com/Japjotsingh02/color-pencil-clone#overview)
   * [What this app can do ](https://github.com/Japjotsingh02/color-pencil-clone#what-it-can-do-)
   * [Links](https://github.com/Japjotsingh02/color-pencil-clone#links-)
 * [Making Process](https://github.com/Japjotsingh02/color-pencil-clone#making-process)
