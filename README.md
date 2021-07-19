@@ -3,7 +3,7 @@ This is a color pencil clone.
 
 ## Table of contents
 * [Overview](https://github.com/Japjotsingh02/color-pencil-clone#overview)
-  * [What this app can do ](https://github.com/Japjotsingh02/color-pencil-clone#what-it-can-do-)
+  * [What this app can do ](https://github.com/Japjotsingh02/color-pencil-clone#what-this-app-can-do-)
   * [Links](https://github.com/Japjotsingh02/color-pencil-clone#links-)
 * [Making Process](https://github.com/Japjotsingh02/color-pencil-clone#making-process)
   * [Built with](https://github.com/Japjotsingh02/color-pencil-clone#built-with-)
