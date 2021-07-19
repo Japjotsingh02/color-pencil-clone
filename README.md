@@ -19,8 +19,8 @@ This is a color pencil clone.
 
 ### Links-
 
-* Live Site URL: [Live Site URL](https://weatherwebapp1.netlify.app/)
-* Repository Link : [Github}()
+* Live Site URL: [Live Site URL](https://colorpencilclone.netlify.app/)
+* Repository Link : [Github](https://github.com/Japjotsingh02/color-pencil-clone)
 
 ## Making Process
 
